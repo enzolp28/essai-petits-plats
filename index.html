@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les petits plats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo-home" src="./img/Logo.png" alt="logo les petits plats">
+        <div class="title-input">
+            <h1>CHERCHEZ PARMI PLUS DE 1500 RECETTES DU QUOTIDIEN, SIMPLES ET DÉLICIEUSES</h1>
+            <form action="" class="form-search">
+                <input type="text" id="main-search" placeholder="Rechercher une recette, un ingrédient, ...">
+                <img id="loupe" src="./img/loupe.svg" alt="">
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="menu">
+            <div class="tag-container">
+                <div class="dropdown ">
+                    <div class="dropdown-header">
+                        <p>Ingredients</p>
+                        <img class="arrow" src="./img/menu-dropdown/arrow.svg" alt="">
+                    </div>
+
+                    <div class="dropdown-content">
+                        <input type="text" id="search-ingredients">
+                        <img src="./img/menu-dropdown/icon-search.svg" id="search" alt="">
+                        <img src="./img/menu-dropdown/delete-search.svg" id="delete-search" alt="">
+                        <ul id="ingredients-list" class="tag-list">
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div id="tag-ingredients">
+
+                </div>
+            </div>
+
+            <div class="tag-container">
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <p>Appareils</p>
+                        <img class="arrow" src="./img/menu-dropdown/arrow.svg" alt="">
+                    </div>
+                    <div class="dropdown-content">
+                        <input type="text" id ="search-appareils">
+                        <img src="./img/menu-dropdown/icon-search.svg" id="search" alt="">
+                        <img src="./img/menu-dropdown/delete-search.svg" id="delete-search" alt="">
+                        <ul id="appareils-list">
+    
+                        </ul>
+                    </div>
+                </div>
+                <div id="tag-appareils">
+                </div>
+            </div>
+
+            <div class="tag-container">
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <p>Ustensiles</p>
+                        <img class="arrow" src="./img/menu-dropdown/arrow.svg" alt="">
+                    </div>
+                    <div class="dropdown-content">
+                        <input type="text" id="search-ustensiles">
+                        <img src="./img/menu-dropdown/icon-search.svg" id="search" alt="">
+                        <img src="./img/menu-dropdown/delete-search.svg" id="delete-search" alt="">
+                        <ul id="ustensiles-list">
+    
+                        </ul>
+                    </div>
+                </div>
+                <div id="tag-ustensiles">
+                </div>
+            </div>
+            <span id="compteur-recipes"></span>
+        </section>
+        <section class="container-card">
+            <!-- CARD 
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://picsum.photos/id/237/200/300" alt="">
+                    <span>60min</span>
+                </div>
+                <div class="card-content">
+                    <h3>Limonade de Coco</h3>
+                    <div class="card-content_recette">
+                        <h4>RECETTE</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure. Lorem, ipsum dolor.</p>
+                    </div>
+                    <div class="card-content_ingredient">
+                        <h4>INGRÉDIENTS</h4>
+                        <div class="card-ingredient">
+                            <div class="card-ingredient_list">
+                                <p>Lait de coco</p>
+                                <p>400ml</p>
+                            </div>
+                            <div class="card-ingredient_list">
+                                <p>Jus de citron</p>
+                                <p>2</p>
+                            </div>
+                            <div class="card-ingredient_list">
+                                <p>Crème de coco</p>
+                                <p>4 cuillières</p>
+                            </div>
+                            <div class="card-ingredient_list">
+                                <p>Sucre</p>
+                                <p>20g</p>
+                            </div>
+                            <div class="card-ingredient_list">
+                                <p>Glaçons</p>
+                                <p>2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://picsum.photos/id/237/200/300" alt="">
+                    <span>60min</span>
+                </div>
+                <div class="card-content">
+                    <h3>Limonade de Coco</h3>
+                    <div class="card-content_recette">
+                        <h4>RECETTE</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure. Lorem, ipsum dolor.</p>
+                    </div>
+                    <div class="card-content_ingredient">
+                        <h4>INGRÉDIENTS</h4>
+                        <div class="card-ingredient">
+                            <div class="card-ingredient_list">
+                                <p>Lait de coco</p>
+                                <p>400ml</p>
+                            </div>
+                            <div class="card-ingredient_list">
+                                <p>Jus de citron</p>
+                                <p>2</p>
+                            </div>
+                            <div class="card-ingredient_list">
+                                <p>Crème de coco</p>
+                                <p>4 cuillières</p>
+                            </div>
+                            <div class="card-ingredient_list">
+                                <p>Sucre</p>
+                                <p>20g</p>
+                            </div>
+                            <div class="card-ingredient_list">
+                                <p>Glaçons</p>
+                                <p>2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://picsum.photos/id/237/200/300" alt="">
+                    <span>60min</span>
+                </div>
+                <div class="card-content">
+                    <h3>Limonade de Coco</h3>
+                    <div class="card-content_recette">
+                        <h4>RECETTE</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure. Lorem, ipsum dolor.</p>
+                    </div>
+                    <div class="card-content_ingredient">
+                        <h4>INGRÉDIENTS</h4>
+                        <div class="card-ingredient">
+                            <div class="card-ingredient_list">
+                                <p>Lait de coco</p>
+                                <p>400ml</p>
+                            </div>
+                            <div class="card-ingredient_list">
+                                <p>Jus de citron</p>
+                                <p>2</p>
+                            </div>
+                            <div class="card-ingredient_list">
+                                <p>Crème de coco</p>
+                                <p>4 cuillières</p>
+                            </div>
+                            <div class="card-ingredient_list">
+                                <p>Sucre</p>
+                                <p>20g</p>
+                            </div>
+                            <div class="card-ingredient_list">
+                                <p>Glaçons</p>
+                                <p>2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+        </section>
+    </main>
+    <!---
+        <input type="text" id="main-search">
+    <div id="recipes-container"> 
+        -->
+
+    </div>
+    <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>

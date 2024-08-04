@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@200..800&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/img-header.jpeg");
+    width: 100%;
+    height: 960px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-home {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.title-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-input h1 {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    text-align: center;
+    width: 60%;
+    color: #FFD15B;
+    font-family: 'Anton', sans-serif;
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+
+.form-search {
+    position: relative;
+    width: 80%;
+
+}
+
+.form-search input {
+    width: 100%;
+    height: 72px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 20px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+
+#loupe {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+/* MAIN */
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: #E5E5E5;
+
+}
+
+/* MENU */
+
+.menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 30px 70px;
+    gap: 50px;
+}
+
+.menu span {
+    font-family: 'Anton', sans-serif;
+    margin-left: auto;
+}
+
+/* DROPDOWN */
+
+.dropdown {
+    width: 200px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+}
+
+.dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 50px;
+    background: #FFFFFF;
+    /* padding: 20px; */
+    width: 100%;
+    border-radius: 10px;
+    z-index: 10;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #C6C6C6;
+    border-radius: 2px;
+    margin-left: 10%;
+    /* margin-bottom: 20px; */
+}
+
+#search {
+    position: absolute;
+    right: 32px;
+    top: 13px;
+}
+
+#delete-search {
+    position: absolute;
+    right: 55px;
+    top: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+/* CARD RECETTE */
+
+.container-card {
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.card {
+    width: 340px;
+    height: 100%;
+    border-radius: 21px;
+    box-shadow: 0px 4px 34px 30px #0000000A;
+}
+
+.card-img {
+    position: relative;
+    height: 253px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 253px;
+    border-radius: 21px 21px 0 0;
+    object-fit: cover;
+}
+
+.card-img span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #FFD15B;
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 14px;
+}
+
+.card-content {
+    padding: 30px 20px;
+    background: #FFFFFF;
+    border-end-start-radius: 21px;
+    border-end-end-radius: 21px;
+}
+
+.card-content h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.card-content_recette h4,
+.card-content_ingredient h4 {
+    margin-bottom: 15px;
+    color: #7A7A7A;
+    font-weight: 700px;
+    font-size: 12px;
+    line-height: 16.39px;
+
+}
+
+.card-content_recette p {
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.12px;
+    overflow: hidden;
+    /* Cache le texte qui dépasse */
+    text-overflow: ellipsis;
+    /* Ajoute des points de suspension à la fin */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.card-content_ingredient h4 {
+    margin-bottom: 15px;
+}
+
+.card-ingredient {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.card-ingredient_list :first-child {
+    font-size: 14px;
+    line-height: 19.12px;
+    font-weight: 500;
+    color: #1B1B1B;
+}
+
+.card-ingredient_list :nth-child(2) {
+    font-size: 14px;
+    line-height: 19.12px;
+    font-weight: 400;
+    color: #7A7A7A;
+}
+
+/* Menus dropdown */
+
+#ingredients-list,
+#appareils-list,
+#ustensiles-list {
+    margin: 30px 0;
+    max-height: 400px;
+    overflow-y: auto;
+    cursor: pointer;
+}
+
+#ingredients-list li,
+#appareils-list li,
+#ustensiles-list li {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 14px;
+    
+
+}
+
+#ingredients-list li:hover,
+#appareils-list li:hover,
+#ustensiles-list li:hover {
+    background-color: #FFD15B;
+    width: 100%;
+}
+
+.dropdown .dropdown-content {
+    display: none;
+}
+
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
+.tag {
+    background-color: #FFD15B;
+    padding: 17px 18px 17px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.tag>span {
+    font-family: "Manrope", sans-serif;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.tag button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag button:hover {
+    color: #FFD15B;
+    background-color: #000;
+}
+
+.arrow {
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
