@@ -146,13 +146,13 @@ main {
     /* margin-bottom: 20px; */
 }
 
-#search {
+.search {
     position: absolute;
     right: 32px;
     top: 13px;
 }
 
-#delete-search {
+.delete-search {
     position: absolute;
     right: 55px;
     top: 15px;
